@@ -1,0 +1,163 @@
+body {
+    /* background-color: rgb(186, 99, 99); */
+    font-family: "eb+garamound";
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 40px; */
+}
+
+.navbar ul li {
+    font-size: 26px;
+}
+
+.hello {
+    background-color: rgb(186, 99, 99);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 100vh;
+    /* margin: 0 20px; */
+    /* margin-top: 40%;/
+    /* padding: 200px; */
+    
+    
+    
+}
+
+.hello h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.hello h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.hello h1, .hello h2 {
+    /* margin: auto; */
+    /* margin-top: 50%; */
+    
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    
+}
+.about-me {
+    height: 100vh;
+    background-color: bisque;
+}
+
+.about-me h2, .projects h2 {
+    /* margin: 20px; */
+    padding: 60px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about-me img {
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 200px;
+}
+
+.about-me p {
+    font-size: 20px;
+    margin: 0 10%;
+    padding: 50px;
+}
+
+.skills {
+    display: flex;
+    padding: 50px;
+    
+}
+
+.skills img {
+    width: 100px;
+    
+    
+}
+
+.projects {
+    height: 100vh;
+    background-color:antiquewhite;
+}
+
+.projects h2 {
+    margin-bottom: 50px;
+}
+
+.proj-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    /* margin: 20px; */
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    position: relative;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.card img {
+    width: 250px;
+    height: 84.75%;
+    border-radius: 0 0 13px 13px;
+    
+}
+
+/* .card:hover {
+    box-shadow: 0px 0px 30px 10px grey;
+    scale: 1.08;
+    transition: all .5s ease-out;
+} */
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    box-shadow: 0px 8px 15px 10px rgba(0,0,0,.3);
+    
+    transition: opacity .5s ease;
+
+}
+
+.card:hover::after {
+    opacity: 1;
+}
