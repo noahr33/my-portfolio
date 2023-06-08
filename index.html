@@ -16,9 +16,9 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#proj-section">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
     </header> 
@@ -30,7 +30,7 @@
             <button class="btn">Check out my projects!</button>
         </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about">
         <h2>About Me</h2>
         <img src="./assets/PlaceholderLC.png" alt="placeholder image.">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi expedita qui cupiditate, nulla accusantium dolorem ab, voluptate ipsum recusandae, excepturi aliquid iusto maiores reiciendis quas unde veniam maxime tempore atque.</p>
@@ -40,7 +40,7 @@
             <img src="./assets/PlaceholderLC.png" alt="Javascript">
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="proj-section">
         <h2>Projects</h2>
         <div class="proj-cards">
             <div class="card">
@@ -55,6 +55,20 @@
                 <h3 class="card-header">Project 3</h3>
                 <img src="./assets/PlaceholderLC.png" alt="">
             </div>
+        </div>
+    </section>
+    <section class="contact" id="contact-me">
+        <h2>Contact Me</h2>
+        <div class="form">
+            <form action="" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text">
+                <label for="email">Email:</label>
+                <input type="email">
+                <label for="text">Message:</label>
+                <textarea name="message" id="" cols="50" rows="10"></textarea>
+                <button class="form-btn">Send</button>
+            </form>
         </div>
     </section>
     

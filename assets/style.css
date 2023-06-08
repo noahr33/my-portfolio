@@ -1,12 +1,17 @@
+:root {
+
+}
+
 body {
     /* background-color: rgb(186, 99, 99); */
     font-family: "eb+garamound";
     height: 100%;
     width: 100%;
+    color: white;
 }
 
 .navbar {
-    background-color: aquamarine;
+    background-color: rgb(19, 19, 19);
     padding: 20px;
 }
 
@@ -20,8 +25,15 @@ body {
     font-size: 26px;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hello Section */
+
 .hello {
-    background-color: rgb(186, 99, 99);
+    background-color: rgb(37, 37, 37);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +42,7 @@ body {
     height: 100vh;
     /* margin: 0 20px; */
     /* margin-top: 40%;/
-    /* padding: 200px; */
-    
-    
-    
+    /* padding: 200px; */   
 }
 
 .hello h1 {
@@ -62,12 +71,15 @@ body {
     border-radius: 20px;
     
 }
+
+/* About Me Section */
+
 .about-me {
-    height: 100vh;
-    background-color: bisque;
+    height: 900px;
+    background-color: rgb(48, 48, 48);
 }
 
-.about-me h2, .projects h2 {
+.about-me h2, .projects h2, .contact h2 {
     /* margin: 20px; */
     padding: 60px;
     font-size: 50px;
@@ -77,14 +89,14 @@ body {
 .about-me img {
     display: block;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     width: 200px;
 }
 
 .about-me p {
     font-size: 20px;
     margin: 0 10%;
-    padding: 50px;
+    padding: 30px;
 }
 
 .skills {
@@ -99,13 +111,15 @@ body {
     
 }
 
+/* Projects Section */
+
 .projects {
-    height: 100vh;
-    background-color:antiquewhite;
+    height: 700px;
+    background-color:rgb(55, 55, 55);
 }
 
 .projects h2 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .proj-cards {
@@ -119,7 +133,7 @@ body {
 .card {
     border: 3px solid black;
     border-radius: 15px;
-    margin: 20px;
+    margin: 10px;
     position: relative;
 }
 
@@ -152,12 +166,49 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0;
-    box-shadow: 0px 8px 15px 10px rgba(0,0,0,.3);
-    
+    box-shadow: 0px 8px 15px 10px rgba(255, 253, 253, 0.368);
     transition: opacity .5s ease;
+    border-radius: 15px;
 
 }
 
 .card:hover::after {
     opacity: 1;
+    border-radius: 15px;
 }
+
+/* Contact Me Section */
+
+.contact  {
+    background-color:rgb(0, 0, 0);
+    height: 600px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 20px;
+    
+}
+
+label, input, .form-btn {
+    margin: 5px;
+    font-size: 18px;
+}
+
+/* Media Query */
+
+@media (max-width: 827px) {
+  
+    .card img {
+        width: 150px;
+        height: 77%;
+    }
+}  
