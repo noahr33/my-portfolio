@@ -22,6 +22,8 @@
         </nav>
     </header> 
 
+    <!-- Hello Section -->
+
     <section class="hello">
         <h1>Hi, I'm Noah Koleske,</h1>
         <h2>a full-stack web developer.</h2>
@@ -29,34 +31,49 @@
             <a href="#proj-section" class="btn">My Projects</a>
         </div>
     </section>
+
+    <!-- About Me Section -->
+
     <section class="about-me" id="about">
         <h2>About Me</h2>
-        <img src="./assets/asset-images/PlaceholderLC.png" alt="placeholder image.">
+        <img id="portrait" src="./assets/asset-images/IMG_0548.jpeg" alt="placeholder image.">
         <p>I've always had an interest in computers and working in the digital space, but felt I was too far away from ever being able to enter that field. This year I changed my mind and began my journey into becomming a web developer. I am currently enrolled in a full stack web development bootcamp. I am excited to complete the course, continue learning, and join a team!
         </p>
-        <div class="skills">
+        <figure class="skills">
             <img class="skill-1" src="./assets/asset-images/HTML5.png" alt="html">
             <img class="skill-2" src="./assets/asset-images/css.png" alt="CSS">
             <img class="skill-3" src="./assets/asset-images/javascript-logo.png" alt="Javascript" >
-        </div>
+        </figure>
     </section>
+
+    <!-- Projects Section -->
+
     <section class="projects" id="proj-section">
         <h2>Projects</h2>
         <div class="proj-cards">
-            <div class="card">
-                <h3 class="card-header">Project 1</h3>
-                <img src="./assets/asset-images/PlaceholderLC.png" alt="">
-            </div>
-            <div class="card">
-                <h3 class="card-header">Project 2</h3>
-                <img src="./assets/asset-images/PlaceholderLC.png" alt="">
-            </div>
-            <div class="card">
-                <h3 class="card-header">Project 3</h3>
-                <img src="./assets/asset-images/PlaceholderLC.png" alt="">
-            </div>
+            <a href="" target="_blank"> 
+                <div class="card">
+                    <h3 class="card-header">Project 1</h3>
+                    <img src="./assets/asset-images/PlaceholderLC.png" alt="">
+                </div>
+            </a>
+            <a href="" target="_blank"> 
+                <div class="card">
+                    <h3 class="card-header">Project 2</h3>
+                    <img src="./assets/asset-images/PlaceholderLC.png" alt="">
+                </div>
+            </a>
+            <a href="" target="_blank"> 
+                <div class="card">
+                    <h3 class="card-header">Project 3</h3>
+                    <img src="./assets/asset-images/PlaceholderLC.png" alt="">
+                </div>
+            </a>
         </div>
     </section>
+
+    <!-- Contact Me Section -->
+
     <section class="contact" id="contact-me">
         <h2>Contact Me</h2>
         <div class="form">
@@ -67,10 +84,13 @@
                 <input type="email">
                 <label for="text">Message:</label>
                 <textarea name="message" id="" cols="50" rows="10"></textarea>
-                <button class="form-btn">Send</button>
+                <input type="submit" value="Send" class="form-btn">
             </form>
         </div>
     </section>
+
+    <!-- footer -->
+
     <footer>
         <h4>Noah Koleske &copy 2023</h4>
     </footer>

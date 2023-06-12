@@ -1,5 +1,6 @@
 :root {
     --red: rgb(213, 63, 44);
+    --nav-footer: rgb(23, 23, 23);
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 /* Navigation */
 
 .navbar {
-    background-color: rgb(23, 23, 23);
+    background-color: var(--nav-footer);
     padding: 20px;
 }
 
@@ -37,7 +38,7 @@ li:hover a {
 /* Hello Section */
 
 .hello {
-    background-color: rgb(37, 37, 37);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 49%, rgba(36,36,36,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +92,7 @@ li:hover a {
 
 .about-me {
     height: 900px;
-    background-color: rgb(48, 48, 48);
+    background: linear-gradient(0deg,rgba(36,36,36,1) 0%, rgba(37,37,37,1) 49%, rgba(0,0,0,1) 100%);
 }
 
 .about-me h2, .projects h2, .contact h2 {
@@ -103,8 +104,14 @@ li:hover a {
 .about-me img {
     display: block;
     margin: auto;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     width: 200px;
+    border-radius: 30px;
+}
+
+#portrait {
+    box-shadow: 4px 8px 20px 6px rgba(255, 253, 253, 0.368);
+    width: 250px;
 }
 
 .about-me p {
@@ -133,7 +140,7 @@ li:hover a {
 
 .projects {
     height: 700px;
-    background-color:rgb(55, 55, 55);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 49%, rgba(36,36,36,1) 100%);;
 }
 
 .projects h2 {
@@ -145,6 +152,10 @@ li:hover a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.proj-cards a {
+    text-decoration: none;
+    color: white;
 }
 
 .card {
@@ -197,7 +208,7 @@ li:hover a {
 /* Contact Me Section */
 
 .contact  {
-    background-color:rgb(0, 0, 0);
+    background: linear-gradient(0deg,rgba(36,36,36,1) 0%, rgba(37,37,37,1) 49%, rgba(0,0,0,1) 100%);
     height: 800px;
 }
 
@@ -210,7 +221,7 @@ li:hover a {
 .contact-form {
     display: flex;
     flex-direction: column;
-    border: 5px solid white;
+    border: 5px solid rgba(255, 255, 255, 0.598);
     padding: 20px;
     border-radius: 15px;
     background-color: #2a2a2a;
@@ -249,11 +260,11 @@ input:focus, textarea:focus {
 /* footer */
 
 footer {
-    background-color: rgb(49, 49, 49);
+    background-color: var(--nav-footer);
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
 }
 
@@ -265,4 +276,23 @@ footer {
         width: 150px;
         height: 77%;
     }
+
+    .projects {
+        height: 500px;
+    }
 }  
+
+@media (max-width: 527px ) {
+    .hello h1 {
+        font-size: 40px;
+    }
+
+    .hello h2 {
+        font-size: 30px;
+    }
+    
+    .projects {
+        height: 700px;
+    }
+
+}
