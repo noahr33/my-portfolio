@@ -3,22 +3,20 @@
 }
 
 body {
-    /* background-color: rgb(186, 99, 99); */
-    font-family: "eb+garamound";
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
     width: 100%;
     color: white;
 }
 
 .navbar {
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(23, 23, 23);
     padding: 20px;
 }
 
 .navbar ul {
     display: flex;
     justify-content: space-around;
-    /* padding: 40px; */
 }
 
 .navbar ul li {
@@ -29,6 +27,9 @@ body {
     text-decoration: none;
     color: white;
 }
+li:hover a {
+    color: rgb(220, 48, 48);
+}
 
 /* Hello Section */
 
@@ -37,39 +38,49 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: aqua; */
     width: 100vw;
     height: 100vh;
-    /* margin: 0 20px; */
-    /* margin-top: 40%;/
-    /* padding: 200px; */   
+    
 }
+
+
 
 .hello h1 {
     font-size: 50px;
     text-align: center;
+    font-weight: 600;
 }
+
 
 .hello h2 {
     font-size: 40px;
     text-align: center;
+    font-weight: 300;
 }
 
-.hello h1, .hello h2 {
-    /* margin: auto; */
-    /* margin-top: 50%; */
-    
+.b {
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    width: 200px;
     margin: 20px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 22px;
     border-radius: 20px;
+    background-color: rgb(220, 48, 48);
+    text-decoration: none;
+    color: black;
     
+}
+
+.btn:hover {
+    color: white;
+    box-shadow: 0px 0px 10px 5px #fff;
 }
 
 /* About Me Section */
@@ -80,7 +91,6 @@ body {
 }
 
 .about-me h2, .projects h2, .contact h2 {
-    /* margin: 20px; */
     padding: 60px;
     font-size: 50px;
     text-align: center;
@@ -107,9 +117,11 @@ body {
 
 .skills img {
     width: 100px;
-    
-    
+    height: 100px;
+    object-fit: cover;
 }
+
+
 
 /* Projects Section */
 
@@ -120,14 +132,13 @@ body {
 
 .projects h2 {
     margin-bottom: 30px;
+    
 }
 
 .proj-cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
-    /* margin: 20px; */
 }
 
 .card {
@@ -141,8 +152,8 @@ body {
     text-align: center;
     font-size: 26px;
     padding: 10px;
-    background-color: white;
-    border-radius: 15px 15px 0 0;
+    background-color: rgb(222, 65, 65);
+    border-radius: 12px 12px 0 0;
 }
 
 .card img {
@@ -151,12 +162,6 @@ body {
     border-radius: 0 0 13px 13px;
     
 }
-
-/* .card:hover {
-    box-shadow: 0px 0px 30px 10px grey;
-    scale: 1.08;
-    transition: all .5s ease-out;
-} */
 
 .card::after {
     content: "";
@@ -167,6 +172,7 @@ body {
     bottom: 0;
     opacity: 0;
     box-shadow: 0px 8px 15px 10px rgba(255, 253, 253, 0.368);
+    scale: 1.05;
     transition: opacity .5s ease;
     border-radius: 15px;
 
@@ -181,7 +187,7 @@ body {
 
 .contact  {
     background-color:rgb(0, 0, 0);
-    height: 600px;
+    height: 800px;
 }
 
 .form {
@@ -193,14 +199,47 @@ body {
 .contact-form {
     display: flex;
     flex-direction: column;
-    border: 1px solid grey;
+    border: 5px solid white;
     padding: 20px;
+    border-radius: 15px;
+    background-color: #2a2a2a;
+    width: 65vw;
     
 }
 
-label, input, .form-btn {
+label, input, .form-btn, textarea {
     margin: 5px;
     font-size: 18px;
+    border-radius: 8px;
+    
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    
+}
+
+.form-btn {
+    margin: 10px 40%;
+    background-color: rgb(222, 65, 65);
+    border: none;
+    padding: 10px;
+}
+
+.form-btn:hover {
+    color: white;
+    box-shadow: 0px 0px 10px 5px #fff;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(49, 49, 49);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
 /* Media Query */
